@@ -124,4 +124,17 @@ Fend
 
 El código del brazo robótico Epson está diseñado para recibir y procesar comandos seriales enviados por el ESP32, lo que permite mover el brazo a posiciones específicas. En la función principal (`main`), se configuran parámetros iniciales como velocidad, aceleración y herramienta activa, y se habilita la recepción de datos seriales a través de la función `serial`. Esta última se encarga de abrir el puerto de comunicación, esperar datos entrantes, leer el valor recibido y almacenarlo en una variable (`dato`). En el flujo principal, un bucle evalúa continuamente el valor de `dato` y, mediante una estructura `select-case`, ejecuta el movimiento correspondiente hacia posiciones predefinidas (`N1`, `N2`, `N3`) según el comando recibido.
 
+![Imagen de WhatsApp 2024-12-02 a las 16 04 47_3c259024](https://github.com/user-attachments/assets/499c1a39-e746-4f98-b141-8a0f3cf31cce)
+![Imagen de WhatsApp 2024-12-02 a las 16 04 49_2e7bf57b](https://github.com/user-attachments/assets/069eaa99-346c-465f-83a3-f4b6345394f0)
 
+## Conclusiones
+
+***Atzin Morales Alejandre:*** 
+El desarrollo de este sistema de control destacó por su enfoque en la interacción dinámica entre un microcontrolador y un brazo robótico, mostrando cómo sensores simples pueden potenciar aplicaciones complejas. Al traducir datos ambientales en acciones concretas, se creó un vínculo eficiente entre la medición del entorno y la ejecución precisa de movimientos. Esta práctica evidencia la versatilidad de la robótica en la automatización de procesos, demostrando que con recursos accesibles y una programación bien estructurada, es posible implementar soluciones innovadoras para aplicaciones industriales, educativas o experimentales.
+
+***Dante Mejía Silva:*** 
+En esta práctica, se logró una integración eficiente entre un ESP32 y un brazo robótico Epson, utilizando un sensor ultrasónico como entrada principal para generar movimientos automatizados y precisos. El ESP32 procesó datos en tiempo real, interpretó distancias en comandos específicos y los envió al brazo mediante comunicación serial, mientras que el robot ejecutó estos comandos utilizando configuraciones optimizadas para velocidad y precisión. Este sistema demuestra la capacidad de combinar hardware y software de manera efectiva, creando una solución adaptable y escalable para tareas de automatización y robótica. La experiencia adquirida refuerza la importancia de la coordinación entre sistemas heterogéneos y la optimización del flujo de datos para lograr un control robusto y dinámico.
+
+## Referencias Bibliográficas 
+
+[1] 	EpsonCompany, «Especialistas en automatización industrial». 2024, https://www.epson.es/es_ES/robots
